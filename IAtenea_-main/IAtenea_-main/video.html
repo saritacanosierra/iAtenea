@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IATENEA</title>
+    <link rel="stylesheet" href="./chatbot/chat/styleChat.css">
+    <link rel="icon" href="/chatbot/src/img/logo blanco.png">
+</head>
+
+<body>
+  
+
+        <div class="contentLeftVideo">
+            
+                <video controls src="./assets/images/modo de uso ia.mp4"></video>
+            
+        </div>
+    </section>
+</body>
+<div id="indicadorReproduccion"></div>
+
+<script>
+  const video = document.getElementById('miVideo');
+  const indicador = document.getElementById('indicadorReproduccion');
+
+  video.addEventListener('play', () => {
+    indicador.style.backgroundColor = 'red';
+  });
+
+  video.addEventListener('pause', () => {
+    indicador.style.backgroundColor = 'green';
+  });
+</script>
+
+
+</html>

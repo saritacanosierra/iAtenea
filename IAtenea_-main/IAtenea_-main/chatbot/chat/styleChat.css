@@ -1,0 +1,177 @@
+* {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(/chatbot/src/img/fondo\ azul.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentInfo {
+    display: flex;
+    width: 70%;
+    height: 90%;
+
+
+}
+
+.contentRight {
+    width: 28%;
+    height:100%;
+    background-color: #D9D9D9;
+    border-radius: 5% 0% 0% 5%;
+}
+
+.contentLeft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.linkChat {
+    width: 70%;
+    height: 90%;
+    border: none;
+}
+
+.linkIframe{
+    border-radius: 0% 2% 2% 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+.logo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.imgLogo {
+    width:48%;
+    height: 22%;
+}
+
+.list {
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    
+}
+a.linkButton{
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    border: none; 
+    padding: 0%;
+    margin: 0;
+}
+.buttonListChat {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    border: none;
+}
+
+.buttonListChat:hover {
+    background-color: #343541;
+    color: white;
+}
+
+.robot {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40%; 
+    justify-content:center;
+    align-items: flex-start;
+    margin-top: 15%;
+
+}
+.contenedor-spline {
+  width: 500px; 
+  height: 300px; 
+}
+
+video{
+  width:  100%;
+  height:90%;
+}
+#container canvas{visibility: visible !important;
+width: 100%  !important;
+height: 100%  !important;
+}
+
+.contentLeftVideo{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ @media (max-width: 768px) {
+   
+    .contentInfo {
+      flex-direction: row; 
+      width: 95%; 
+      height: 95%;
+    
+    }
+  
+    .contentRight,
+    .contentLeft {
+      width: 100%; 
+     }
+  
+    .contentRight {
+      border-radius: 0;  
+    
+    }
+  
+    .list {
+      margin-top: 30%;  /* Remove top margin on small screens */
+    }
+  
+    .robot {
+      opacity: 0;  
+    }
+  
+    .linkIframe {
+      border-radius: 0; 
+    }
+  }
+  
+ 
+  .contentInfo {
+    display: flex;
+  }
+  
+  .contentRight {
+    width: 28%;
+    background-color: #D9D9D9;
+  }
+  
+  .contentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  

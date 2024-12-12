@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>IAtenea-Asistente virtual</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== lineicons CSS ======-->
+    <link rel="stylesheet" href="assets/css/lineicons.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  location="us-central1"
+  project-id="chatbot-crystal"
+  agent-id="853fde9b-2034-4d7b-af0e-4795925391c9"
+  language-code="es"
+  max-query-length="-1">
+<df-messenger-chat-bubble
+   chat-title="">
+</df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+tiene menú contextual
+    
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="logo" src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto text-lg">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#why">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#demo">Demostración</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#Funcionalidades">Funcionalidades</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+
+        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center">
+            
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-evenly ">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="header-hero-content">
+                            <h3 class="header-title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s"><span>IAtenea</span> Únete a la revolución de la IA</h3>
+                            <p class="text wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s"> IAtenea integra incluso las tareas más complejas, adaptándose a tus necesidades específicas y llevando a tu proceso al siguiente nivel.</p>
+                            <ul class="d-flex">
+                                <li><a href="chatbot/chat/chat.html" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.8s; animation-name: fadeInLeftBig;">¡Probar Ahora!</a></li>
+                                <li><a href="./video.html" target="_blank"  class="header-video video-popup wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="1.2s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 1.2s; animation-name: fadeInLeftBig;"><i class="lni lni-play"></i></a></li>
+                            </ul>
+                        </div> <!-- header hero content -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10">
+                        <div class="header-image">
+                            <img src="assets/images/cel2.png" alt="app" class="image wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        </div> <!-- header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-shape-1"></div> 
+        </div> <!-- header hero -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== SERVICES PART START ======-->
+    
+    <section id="why" class="services-area pt-110 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">¿Por qué debería elegirnos?</h3>
+                        <p class="text">iAtenea, la plataforma de inteligencia artificial que está redefiniendo la manera en que las empresas operan en el mundo actual</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-1 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-layers"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Innovación Tecnológica</a></h4>
+                            <p class="text"> Ofrecemos soluciones avanzadas para impulsar el rendimiento empresarial.</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-2 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-layout"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Personalización</a></h4>
+                            <p class="text">Nos adaptamos a las necesidades específicas de cada proceso</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-3 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-bolt"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Mejora de la Productividad</a></h4>
+                            <p class="text">Aumenta la productividad de los equipos y acelera la toma de decisiones.</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-4 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-protection"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Seguridad y Confidencialidad</a></h4>
+                            <p class="text">Aseguramos la confidencialidad y la protección de la información en todo momento.</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== SERVICES PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section id="demo" class="about-area pt-70 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="about-shape"></div>
+                        <img class="app" src="assets/images/about-app.png" alt="app">
+                    </div> <!-- about image -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <h3 class="title">Demostración de Producto</h3>
+                            <p class="text">Mira nuestra demostración interactiva para ver cómo iAtenea puede ayudarte a resolver consultas, analizar datos y tomar decisiones informadas.</p>
+                        </div> <!-- section title -->
+                        <a href="chatbot/chat/chat.html" rel="nofollow" class="main-btn">¡Probar Ahora!</a>
+                    </div> <!-- about content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+    
+    
+    <!--====== DOWNLOAD PART START ======-->
+    
+    <section id="Funcionalidades" class="download-area pt-70 pb-40">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="download-image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <img class="image" src="assets/images/CEL 5.png" alt="download">
+                        
+                        <div class="download-shape-1"></div>
+                        <div class="download-shape-2">
+                            <img class="svg" src="assets/images/download-shape.svg" alt="shape">
+                        </div>
+                    </div> <!-- download image -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="download-content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <h3 class="download-title">¡Principales Funcionalidades!</h3>
+                        <p class="text">iAtenea combina dos tipos de inteligencia artificial: predictiva y entrenada, para ofrecerte soluciones personalizadas basadas en datos generales y específicos de tu proceso</p>
+                            <p class="text">Adaptable, escalable y transversalizable, iAtenea puede implementarse en donde cualquier tipo de proceso.</p>
+                            
+                        
+                        <ul>
+                            <a href="chatbot/chat/chat.html" rel="nofollow" class="main-btn">¡Probar Ahora!</a>
+                            <a href="./figma.html" rel="nofollow" class="main-btn">¡proyección!</a>
+                        </ul>
+                    </div> <!-- download image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== DOWNLOAD PART ENDS ======-->
+    
+    <!--====== PART START ======-->
+    
+    <footer id="footer" class="footer-area">
+        
+        <div class="footer-shape shape-1"></div>
+        <div class="footer-shape shape-2"></div>
+        <div class="footer-shape shape-3"></div>
+        <div class="footer-shape shape-4"></div>
+        <div class="footer-shape shape-5"></div>
+        <div class="footer-shape shape-6"></div>
+        <div class="footer-shape shape-7"></div>
+        <div class="footer-shape shape-8">
+            <img class="svg" src="assets/images/footer-shape.svg" alt="Shape">
+        </div>
+        
+        <div class="footer-widget pt-30 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                            <a class="logo" href="#" >
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <p class="text">iAtenea combina dos tipos de inteligencia artificial: predictiva y entrenada, para ofrecerte soluciones personalizadas basadas en datos generales y específicos de tu proceso</p>
+                            <p class="text">Adaptable, escalable y transversalizable, iAtenea puede implementarse en cualquier tipo de proceso.</p>
+                            
+                            <ul class="social">
+                                <li><a href="#"><i class="lni lni-facebook"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter"></i></a></li>
+                                <li><a href="#"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                
+                            </ul>
+                        </div> <!-- footer about -->
+                    </div> 
+                    <div class="col-lg-5 col-md-6">
+                        <div class="footer-link d-flex flex-wrap">
+                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                                <div class="footer-title">
+                                    <h4 class="title">Algunos Links</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a class="" href="#home">Inicio</a></li>
+                                    <li><a class="" href="#why">Nosotros</a></li>
+                                    <li><a class="" href="#demo">Demostración</a></li>
+                                    <li><a class="" href="#Funcionalidades">Funcionalidades</a></li>
+                                </ul>
+                            </div> <!-- footer link wrapper -->
+                            
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright d-sm-flex justify-content-between">
+                            <div class="copyright-text text-center">
+                                <p class="text"><a rel="nofollow" href="#!">© IAtenea</a> - Un Proyecto de Innovación para <a rel="nofollow" href="https://crystal.com.co/">Crystal s.a.s</a>. Todos los derechos reservados </p>
+                            </div> <!-- copyright text -->
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    
+    <!--====== PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    
+    <!--====== PART START ======-->
+    
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-"></div> 
+            </div>
+        </div>
+    </section>
+-->
+    
+    <!--====== PART ENDS ======-->
+    
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
